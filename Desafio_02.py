@@ -1,4 +1,13 @@
-import random
+import random as ra
+
+print('''
+   __     ______     ______     ______        _____     ______        ______   ______     ______     ______     ______    
+  /\ \   /\  __ \   /\  ___\   /\  __ \      /\  __-.  /\  __ \      /\  ___\ /\  __ \   /\  == \   /\  ___\   /\  __ \   
+ _\_\ \  \ \ \/\ \  \ \ \__ \  \ \ \/\ \     \ \ \/\ \ \ \  __ \     \ \  __\ \ \ \/\ \  \ \  __<   \ \ \____  \ \  __ \  
+/\_____\  \ \_____\  \ \_____\  \ \_____\     \ \____-  \ \_\ \_\     \ \_\    \ \_____\  \ \_\ \_\  \ \_____\  \ \_\ \_\ 
+\/_____/   \/_____/   \/_____/   \/_____/      \/____/   \/_/\/_/      \/_/     \/_____/   \/_/ /_/   \/_____/   \/_/\/_/ 
+                                                                                                                          
+''')
 
 frutas = ['maçã', 'banana', 'laranja', 'uva', 'abacaxi', 'morango', 'melancia', 'limão', 'pera', 'kiwi', 'mamão', 'amora', 'pêssego', 'goiaba', 'cereja']
 profissoes = ['engenheiro', 'advogado', 'dentista', 'médico', 'professor', 'programador', 'enfermeiro', 'contador', 'arquiteto', 'cozinheiro', 'designer', 'piloto', 'veterinário', 'jornalista', 'psicólogo']
@@ -6,7 +15,7 @@ cidades = ['São Paulo', 'Rio de Janeiro', 'Belo Horizonte', 'Salvador', 'Brasí
 cores = ['vermelho', 'azul', 'verde', 'amarelo', 'roxo', 'laranja', 'branco', 'preto', 'rosa', 'cinza', 'marrom', 'violeta', 'turquesa', 'bege', 'ouro']
 
 tipo = 6
-r = random.randint(1, 15)
+r = ra.randint(0, 14)
 while tipo > 4:
     tipo = int(input('Categoria da palavra: \n 1 - Frutas \n 2 - Profissão \n 3 - Cidade \n 4 - Cor \n Opção: '))
     if tipo == 1:
@@ -26,7 +35,19 @@ while tipo > 4:
         continue
     texto = texto.replace('á', 'a').replace('é', 'e').replace('í', 'i').replace('ó', 'o').replace('ú', 'u').replace('â', 'a').replace('ã', 'a').replace('ê', 'e').replace('õ', 'o').replace('ô', 'o').replace('ç', 'c').replace('í', 'i').replace('à', 'a').replace('è', 'e').replace('ì', 'i').replace('ò', 'o').replace('ù', 'u')
 
-print('  +---+ \n  |   | \n  O   | \n /|\  | \n / \  | \n      | \n=========')
+print('''   
+  ------------------|                           
+     _  |  _        |
+    (c).-.(c)       |
+     / ._. \        |
+   __\( Y )/__      |
+  (_.-/'-'\-._)     |
+     || O ||        |
+   _.' `-' '._      |
+  (.-./`-'\.-.)     |
+   `-'     `-'      |
+========================                                                       
+''')
 barra = ['_' for _ in texto]
 print(' '.join(barra))
 letras = ['letras usadas']
@@ -48,7 +69,19 @@ while '_' in barra:
         erros += 1
         letras.append(letra)
         print(letras)
-        print('  +---+ \n  |   | \n  O   | \n /|\  | \n /    | \n      | \n=========')
+        print('''   
+  ------------------|                           
+     _  |  _        |
+    (c).-.(c)       |
+     / ._. \        |
+   __\( Y )/__      |
+  (_.-/'-'\-._)     |
+     || O ||        |
+   _.' `-' '        |
+  (.-./`-'          |
+   `-'              |
+========================                                                       
+''')
         print(' '.join(barra))
 
     elif erros == 2:
@@ -56,7 +89,19 @@ while '_' in barra:
         erros += 1
         letras.append(letra)
         print(letras)
-        print('  +---+ \n  |   | \n  O   | \n /|\  | \n      | \n      | \n=========')
+        print('''   
+  ------------------|                           
+     _  |  _        |
+    (c).-.(c)       |
+     / ._. \        |
+   __\( Y )/__      |
+  (_.-/'-'\-._)     |
+     || O ||        |
+     ' `-' '        |
+       `-'          |
+                    |
+========================                                                       
+''')
         print(' '.join(barra))
 
     elif erros == 3:
@@ -64,7 +109,19 @@ while '_' in barra:
         erros += 1
         letras.append(letra)
         print(letras)
-        print('  +---+ \n  |   | \n  O   | \n /|   | \n      | \n      | \n=========')
+        print('''   
+  ------------------|                           
+     _  |  _        |
+    (c).-.(c)       |
+     / ._. \        |
+   __\( Y )/        |
+  (_.-/'-'\         |
+     || O ||        |
+     ' `-' '        |
+       `-'          |
+                    |
+========================                                                       
+''')
         print(' '.join(barra))
 
     elif erros == 4:
@@ -72,7 +129,19 @@ while '_' in barra:
         erros += 1
         letras.append(letra)
         print(letras)
-        print('  +---+ \n  |   | \n  O   | \n  |   | \n      | \n      | \n=========')
+        print('''   
+  ------------------|                           
+     _  |  _        |
+    (c).-.(c)       |
+     / ._. \        |
+     \( Y )/        |
+      /'-'\         |
+     || O ||        |
+     ' `-' '        |
+       `-'          |
+                    |
+========================                                                       
+''')
         print(' '.join(barra))
 
     elif erros == 5:
@@ -80,7 +149,19 @@ while '_' in barra:
         erros += 1
         letras.append(letra)
         print(letras)
-        print('  +---+ \n  |   | \n  O   | \n      | \n      | \n      | \n=========')
+        print('''   
+  ------------------|                           
+     _  |  _        |
+    (c).-.(c)       |
+     / ._. \        |
+     \( Y )/        |
+                    |
+                    |
+                    |
+                    |
+                    |
+========================                                                       
+''')
         print(' '.join(barra))
 
     elif erros == 6:
